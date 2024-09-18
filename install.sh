@@ -38,11 +38,11 @@ exit-idle-time = -1
 '
 echo "$pulseconfig" >> /etc/pulse/daemon.conf
 
-mkdir -p /home/pi/.config/pulse
-cp pulseaudio/default.pa /home/pi/.config/pulse/
-mkdir -p /home/pi/.config/systemd/user
-cp pulseaudio/pulseaudio.service /home/pi/.config/systemd/user/
-chown -R pi:pi /home/pi/.config
+mkdir -p ~/.config/pulse
+cp pulseaudio/default.pa ~/.config/pulse/
+mkdir -p ~/.config/systemd/user
+cp pulseaudio/pulseaudio.service ~/.config/systemd/user/
+chown -R pi:pi ~/.config
 sudo -u pi systemctl --user enable pulseaudio
 loginctl enable-linger pi
 

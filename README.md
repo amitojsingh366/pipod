@@ -1,6 +1,6 @@
 # PiPod
 
-A bunch of scripts and configs that allows streaming audio via bluetooth to a [fake ipod device](https://github.com/oandrew/ipod).
+A bunch of scripts and configs that allows streaming audio via bluetooth to a [fake ipod device](https://github.com/dangerzau/ipod-gadget).
 
 Useful if your car only supports Apple devices for some reason (why Fiat and Alfa, why).
 

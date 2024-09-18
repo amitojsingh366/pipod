@@ -1,5 +1,5 @@
 [Unit]
-Description=Crapple imposter
+Description=iPod Service
 
 [Service]
 Type=simple
