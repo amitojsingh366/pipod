@@ -1,0 +1,15 @@
+[Unit]
+Description=Autoconnect to phone
+After=pulseaudio.service
+Requires=bluetooth.target
+StartLimitIntervalSec=600
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/autoconnect-phone.sh
+Restart=on-failure
+RestartSec=1s
+StartLimitBurst=10
+
+[Install]
+WantedBy=multi-user.target

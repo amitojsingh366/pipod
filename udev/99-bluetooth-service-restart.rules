@@ -1,0 +1,2 @@
+SUBSYSTEM=="bluetooth", ACTION=="add", RUN+="/usr/local/bin/start-service.sh"
+SUBSYSTEM=="bluetooth", ACTION=="remove", RUN+="/usr/local/bin/stop-service.sh"
